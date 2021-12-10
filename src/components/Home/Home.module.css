@@ -1,0 +1,73 @@
+.container {
+  height: 100vh;
+  color: var(--primary-color);
+  background: white;
+}
+
+
+.banner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 22%);
+  background-color: white;
+}
+
+.bannerList {
+  list-style: none;
+}
+
+.bannerList li {
+  display: inline-block;
+  font-family: var(--font-family-secondary);
+  margin-right: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.bannerList li:hover {
+  color: var(--hover-color-primary);
+  cursor: pointer;
+}
+
+.bannerList li a:visited {
+  border-bottom: 2px solid aqua;
+}
+
+.bannerButton {
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-header);
+}
+
+.bannerButton:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.button button {
+  border: none;
+  outline: none;
+  color: var(--primary-color-light);
+  background-color: #bdf9e5;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.button button:hover {
+  color: var(--primary-color-light);
+  cursor: pointer;
+  opacity: 0.2;
+}
+

@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.1.0",
+    "@types/styled-components": "^5.1.15",
+    "cloudinary-react": "^1.7.0",
+    "iconsax-react": "0.0.4",
+    "next": "^11.1.2",
+    "pg": "^8.7.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-before-after-slider": "^1.0.4",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-lottie": "^1.2.3",
+    "react-modal": "^3.14.4",
+    "react-paginate": "^8.0.3",
+    "react-scroll": "^1.8.4",
+    "react-social-icons": "^5.6.1",
+    "react-typed": "^1.2.0",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@types/react": "17.0.18",

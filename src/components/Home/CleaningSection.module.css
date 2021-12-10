@@ -1,0 +1,77 @@
+.serviceContainer {
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color-light);
+  height: 15vh;
+  flex-direction: column;
+}
+
+.serviceHeader {
+  font-size: 2rem;
+}
+
+.serviceInfoContainer {
+  position: relative;
+  display: flex;
+  height: 2vh;
+  background-color: var(--second-color-light);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 25px;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 8);
+  margin-right: 2vw;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  height: 15vh;
+  background-color: var(--second-color-light);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 25px;
+  position: relative;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 8);
+  border-radius: 10px;
+  height: 10vh;
+  border: 2px solid var(--primary-color);
+  margin-right: 2vw;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.itemPicture {
+  display: flex;
+  height: 10vh;
+}
+
+.item:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}

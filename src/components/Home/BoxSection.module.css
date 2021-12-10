@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 350px;
+  border-radius: 10px;
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+  background-color: #edfdf8;
+  color: var(--primary-color);
+}
+
+.icon {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.boxHeader {
+  font-size: 2rem;
+}

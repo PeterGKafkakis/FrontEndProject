@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5vh;
+  background-color: #bdf9e5;
+  opacity: 0.4;
+  color: var(--primary-color-light);
+}

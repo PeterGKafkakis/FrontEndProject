@@ -1,9 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+:root {
+  --text-color: #0f1218;
+  --text-secondary: #b8bfba;
+  --text-header: #fff;
+  --text-companies: #be9c5f;
+  --primary-color: #10a574;
+  --primary-color-light: #12b580;
+  --second-color-light: #edfdf8;
+  --background-color: #fff;
+  --background-color-section: #dc96f3;
+  --modal-background: #f3f3f3;
+  --hover-color-primary: #f0d00f;
+  --hover-color-secondary: #1da1f2;
+  --font-family: "Public Sans", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+  --font-family-phone: "Oswald", sans-serif;
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
@@ -13,4 +37,6 @@ a {
 
 * {
   box-sizing: border-box;
+  color: inherit;
+  font: inherit;
 }
