@@ -143,6 +143,38 @@
   grid-row-start: 5;
   grid-row-end: 6;
 }
+.counterBox8 {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.counterBox9 {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.counterBox10 {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.counterBox11 {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
 
 .buttonLeft {
   margin-right: 0.75vw;

@@ -20,6 +20,18 @@ import {
   decBathProtectPrice,
   decHallProtectPrice,
 } from "../../../functions/booking/CarpetProtectorPricing";
+
+import {
+  getBathDeodorizerPrice,
+  getHallDeodorizerPrice,
+  getRoomDeodorizerPrice,
+  getStairDeodorizerPrice,
+  decBathDeodorizerPrice,
+  decHallDeodorizerPrice,
+  decRoomDeodorizerPrice,
+  decStaircaseDeodorizerPrice,
+} from "../../../functions/booking/CarpetDeodorizer";
+
 import styles from "./CarpetCleaningTable.module.css";
 
 const CarpetCleaningTable = ({
@@ -295,6 +307,130 @@ const CarpetCleaningTable = ({
                 staircase_protect: ++carpetState.staircase_protect,
               });
               setPrice(getStairProtectPrice(carpetState, price));
+            }
+          }}
+        >
+          +
+        </button>
+      </div>
+      <div className={styles.counterBox8}>
+        <button
+          className={styles.buttonLeft}
+          onClick={() => {
+            if (carpetState.room_deodorize > 0) {
+              setCarpetState({
+                ...carpetState,
+                room_deodorize: --carpetState.room_deodorize,
+              });
+              setPrice(decRoomDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          -
+        </button>
+        {carpetState.room_deodorize}
+        <button
+          className={styles.buttonRight}
+          onClick={() => {
+            if (carpetState.room_deodorize >= 0) {
+              setCarpetState({
+                ...carpetState,
+                room_deodorize: ++carpetState.room_deodorize,
+              });
+              setPrice(getRoomDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          +
+        </button>
+      </div>
+      <div className={styles.counterBox9}>
+        <button
+          className={styles.buttonLeft}
+          onClick={() => {
+            if (carpetState.bath_deodorize > 0) {
+              setCarpetState({
+                ...carpetState,
+                bath_deodorize: --carpetState.bath_deodorize,
+              });
+              setPrice(decBathDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          -
+        </button>
+        {carpetState.bath_deodorize}
+        <button
+          className={styles.buttonRight}
+          onClick={() => {
+            if (carpetState.bath_deodorize >= 0) {
+              setCarpetState({
+                ...carpetState,
+                bath_deodorize: ++carpetState.bath_deodorize,
+              });
+              setPrice(getBathDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          +
+        </button>
+      </div>
+      <div className={styles.counterBox10}>
+        <button
+          className={styles.buttonLeft}
+          onClick={() => {
+            if (carpetState.entry_deodorize > 0) {
+              setCarpetState({
+                ...carpetState,
+                entry_deodorize: --carpetState.entry_deodorize,
+              });
+              setPrice(decHallDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          -
+        </button>
+        {carpetState.entry_deodorize}
+        <button
+          className={styles.buttonRight}
+          onClick={() => {
+            if (carpetState.entry_deodorize >= 0) {
+              setCarpetState({
+                ...carpetState,
+                entry_deodorize: ++carpetState.entry_deodorize,
+              });
+              setPrice(getHallDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          +
+        </button>
+      </div>
+      <div className={styles.counterBox11}>
+        <button
+          className={styles.buttonLeft}
+          onClick={() => {
+            if (carpetState.staircase_deodorize > 0) {
+              setCarpetState({
+                ...carpetState,
+                staircase_deodorize: --carpetState.staircase_deodorize,
+              });
+              setPrice(decStaircaseDeodorizerPrice(carpetState, price));
+            }
+          }}
+        >
+          -
+        </button>
+        {carpetState.staircase_deodorize}
+        <button
+          className={styles.buttonRight}
+          onClick={() => {
+            if (carpetState.staircase_deodorize >= 0) {
+              setCarpetState({
+                ...carpetState,
+                staircase_deodorize: ++carpetState.staircase_deodorize,
+              });
+              setPrice(getStairDeodorizerPrice(carpetState, price));
             }
           }}
         >
