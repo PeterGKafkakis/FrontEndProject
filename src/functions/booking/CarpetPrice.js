@@ -1,7 +1,7 @@
 export const decrementCarpetRoomPrice = (carpetState, price) => {
   if (carpetState.room_clean >= 0) {
     console.log(carpetState);
-    price = price - 55;
+    price -= 55;
   }
   return price;
 };
@@ -9,14 +9,14 @@ export const decrementCarpetRoomPrice = (carpetState, price) => {
 export const decrementCarpetBathPrice = (carpetState, price) => {
   if (carpetState.room_clean >= 0) {
     console.log(carpetState);
-    price = price - 20;
+    price -= 20;
   }
   return price;
 };
 export const decrementCarpetHallPrice = (carpetState, price) => {
   if (carpetState.room_clean >= 0) {
     console.log(carpetState);
-    price = price - 25;
+    price -= 25;
   }
   return price;
 };
@@ -24,7 +24,7 @@ export const decrementCarpetHallPrice = (carpetState, price) => {
 export const decrementCarpetStaircasePrice = (carpetState, price) => {
   if (carpetState.room_clean >= 0) {
     console.log(carpetState);
-    price = price - 50;
+    price -= 50;
   }
   return price;
 };
@@ -32,7 +32,7 @@ export const decrementCarpetStaircasePrice = (carpetState, price) => {
 export const getCarpetRoomPrice = (carpetState, price) => {
   if (carpetState.room_clean >= 0) {
     console.log(carpetState);
-    price = price + 55;
+    price += 55;
   }
 
   return price;
@@ -41,7 +41,7 @@ export const getCarpetRoomPrice = (carpetState, price) => {
 export const getCarpetBathPrice = (carpetState, price) => {
   if (carpetState.bath_clean >= 0) {
     console.log(carpetState);
-    price = price + 20;
+    price += 20;
   }
 
   return price;
@@ -50,7 +50,7 @@ export const getCarpetBathPrice = (carpetState, price) => {
 export const getCarpetHallPrice = (carpetState, price) => {
   if (carpetState.bath_clean >= 0) {
     console.log(carpetState);
-    price = price + 25;
+    price += 25;
   }
 
   return price;
@@ -59,7 +59,7 @@ export const getCarpetHallPrice = (carpetState, price) => {
 export const getCarpetStaircasePrice = (carpetState, price) => {
   if (carpetState.staircase_clean >= 0) {
     console.log(carpetState);
-    price = price + 50;
+    price += 50;
   }
 
   return price;
